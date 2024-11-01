@@ -14,7 +14,10 @@ buttons.forEach (button => {
         const buttonselect = button.value;
         
         if(display.value === "0"){
-        display.value = buttonselect;
+            display.value = buttonselect;
+        }
+        else{
+            display.value = buttonselect ++ ;
         }
     })
 
