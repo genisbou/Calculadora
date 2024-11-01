@@ -17,7 +17,8 @@ buttons.forEach (button => {
             display.value = buttonselect;
         }
         else{
-            display.value = buttonselect ++ ;
+            display.value += buttonselect;
+            
         }
     })
 
