@@ -11,9 +11,11 @@ const buttons = document.querySelectorAll(".button"); // Crea una array
 buttons.forEach (button => {
 
     button.addEventListener ("click", () => {
-
-        const buttonselect = button.value; 
+        const buttonselect = button.value;
+        
+        if(display.value === 0){
         display.value = buttonselect;
+        }
     })
 
 })
