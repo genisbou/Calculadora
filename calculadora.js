@@ -20,6 +20,6 @@ buttons.forEach (button => {
             display.value += buttonselect;
             
         }
-    })
+    });
 
-})
+});
