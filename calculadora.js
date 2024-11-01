@@ -12,13 +12,8 @@ buttons.forEach (button => {
 
     button.addEventListener ("click", () => {
 
-        const buttonselect = button.textContent; 
-        display.textContent = buttonselect;
+        const buttonselect = button.value; 
+        display.value = buttonselect;
     })
 
 })
-            
-    
-
-
-
