@@ -12,13 +12,13 @@ buttons.forEach (button => {
 
     button.addEventListener ("click", () => {
         const buttonselect = button.value; // Guarda el valor del botó seleccionat
-
-        if  (button.id === "clear") {
-            display.value = "0" ; // Si el valor és C, es posa a 0
-        }
         
         if (display.value === "0") { 
             display.value = buttonselect;  // Si el valor és 0, es mostra directament
+        }
+        
+        if  (buttonselect === "C") {
+            display.value = "0" ; // Si el valor és C, es posa a 0
         }
         
         else {
