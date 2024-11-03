@@ -33,7 +33,7 @@ buttons.forEach (button => {
         if (button.id === "igual") {
             
             numero2= display.value; // Guarda el valor del display a numero2
-            display.value = eval(parseFloat(numero1) + operador + parseFloatnumero2); // Evalua la expressió
+            display.value = eval(parseFloat(numero1) + operador + parseFloat(numero2)); // Evalua la expressió
             numero1 = display.value; // Guarda el resultat a numero1
             operador = ""; // Esborra el valor de operador
             return; // Si és igual, no fa res més (no continua)
