@@ -13,7 +13,7 @@ buttons.forEach (button => {
     button.addEventListener ("click", () => {
         const buttonselect = button.value;
         
-            display.value = buttonselect;
+            display.value += buttonselect;
     });
 
 });
