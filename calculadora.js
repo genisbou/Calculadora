@@ -56,7 +56,7 @@ buttons.forEach (button => {
         if (button.id == "resta"){
 
             numero1 = display.value; // Guarda el valor del display a numero1
-            operador = "+"; // Guarda el valor de l'operador
+            operador = "-"; // Guarda el valor de l'operador
             display.value = operador;
             display.value = numero1; 
             display.value += operador; 
