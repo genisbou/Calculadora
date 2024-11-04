@@ -21,11 +21,10 @@ buttons.forEach (button => {
         
         if (button.id === "del") {
             // Si la length del display és 1, posa el valor a 0
-            if  (display.value.length === 1) {
+            if (display.value.length === 1) {
                 display.value = "0";
                 return; // Si esborra, no fa res més (no continua)
             }
-
             else{ // Si no, esborra l'últim caràcter
                 display.value = display.value.slice(0, -1);
                 return; //  Si esborra, no fa res més (no continua)
@@ -53,6 +52,20 @@ buttons.forEach (button => {
             return; // Si és suma, no fa res més (no continua)
             
         }
+
+        if (button.id == "resta"){
+
+            numero1 = display.value; // Guarda el valor del display a numero1
+            operador = "+"; // Guarda el valor de l'operador
+            display.value = operador;
+            display.value = numero1; 
+            display.value += operador; 
+            // Veure tota la operaico a la pantalla abans de fer la suma
+            return; // Si és suma, no fa res més (no continua)
+
+        }
+
+
         
 
         if (display.value === "0") { 
