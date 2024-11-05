@@ -65,8 +65,28 @@ buttons.forEach (button => {
 
         }
 
+        if (button.id == "multiplicacio"){
 
-        
+            numero1 = display.value; // Guarda el valor del display a numero1
+            operador = "*"; // Guarda el valor de l'operador
+            display.value = operador;
+            display.value = numero1; 
+            display.value += operador; 
+            // Veure tota la operaico a la pantalla abans de fer la suma
+            return; // Si és suma, no fa res més (no continua)
+        }
+
+        if (button.id == "divisio"){
+
+            numero1 = display.value; // Guarda el valor del display a numero1
+            operador = "/"; // Guarda el valor de l'operador
+            display.value = operador;
+            display.value = numero1; 
+            display.value += operador; 
+            // Veure tota la operaico a la pantalla abans de fer la suma
+            return; // Si és suma, no fa res més (no continua)
+        }
+
 
         if (display.value === "0") { 
             display.value = buttonselect;  // Si el valor és 0, es mostra directament
