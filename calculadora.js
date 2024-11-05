@@ -86,7 +86,7 @@ buttons.forEach (button => {
             // Veure tota la operaico a la pantalla abans de fer la suma
             return; // Si és suma, no fa res més (no continua)
         }
-
+                       
 
         if (display.value === "0") { 
             display.value = buttonselect;  // Si el valor és 0, es mostra directament
