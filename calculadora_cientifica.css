@@ -4,26 +4,27 @@
     font-size: 16px;
     margin: 4px 2px;
     width: 50px;
+
   }
+
+
 
 .display {
     padding: 14px  14px;
     font-size: 16px;
     width: 215px ;
+    text-align: right;
 
 }
-#zero {
-   
-    width: 100px;
-}
-#divisio, #multiplicacio, #restar, #sumar {
+
+#divisio, #multiplicacio, #resta, #suma, #ac {
 
 	background-color: orange;
 
 }
-#resultat {
+#igual {
 
-	background-color: green;
+	background-color: forestgreen;
     width: 215px;
     text-align: center;
 
