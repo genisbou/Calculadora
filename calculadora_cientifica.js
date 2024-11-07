@@ -1,6 +1,7 @@
 let numero1 = "";
 let numero2 = "";
 let operador = "";
+let memory = 0;
 
 
 // Seleccionar tots els components que tinguin el ID display
@@ -13,11 +14,6 @@ buttons.forEach (button => {
     button.addEventListener ("click", () => {
         const buttonselect = button.value; // Guarda el valor del botó seleccionat
 
-
-        if  (button.id === "clear") {
-            display.value = "0" ; // Si el valor és C, es posa a 0
-            return; // Si esborra, no fa res més (no continua)
-        }
 
         if (button.id === "del") {
             // Si la length del display és 1, posa el valor a 0
@@ -98,11 +94,32 @@ buttons.forEach (button => {
             return; // No continua
         }
 
-        if (button.id == "m+"){ // Guarda memòria
-            mem = numero1;
-            mem = display.value;
+        if (button.id == "m+"){ // Suma un valor al valor guardat a la memòria
+            memory += display.value;
+            return;
+
+        }
+        if (button.id === "m-"){ // Resta un valor al valor guardat a la memòria
+
+
+        }
+
+        if (button.id == "mr") { // Mostra el valor de la memòria
+            display.value = memory;
             return;
         }
+
+        if  (button.id === "ac") {
+            display.value = "0" ; // Si el valor és C, es posa a 0
+            return; // Si esborra, no fa res més (no continua)
+        }
+
+
+
+
+
+
+        //
 
         if (display.value === "0") {
             display.value = buttonselect;  // Si el valor és 0, es mostra directament
