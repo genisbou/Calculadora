@@ -4,6 +4,7 @@
     font-size: 16px;
     margin: 4px 2px;
     width: 50px;
+    background-color:dimgray;
 
   }
 
@@ -12,7 +13,7 @@
 .display {
     padding: 14px  14px;
     font-size: 16px;
-    width: 215px ;
+    width: 270px ;
     text-align: right;
 
 }
@@ -25,7 +26,7 @@
 #igual {
 
 	background-color: forestgreen;
-    width: 215px;
+    width: 300px;
     text-align: center;
 
 }
