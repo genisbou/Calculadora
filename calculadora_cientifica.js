@@ -2,6 +2,8 @@ let numero1 = "";
 let numero2 = "";
 let operador = "";
 let memory = 0;
+let resultat1_x = "";
+let error1 = ("ERROR. No es pot dividir entre zero.");
 
 
 // Seleccionar tots els components que tinguin el ID display
@@ -29,15 +31,25 @@ buttons.forEach (button => {
 
         if (button.id === "igual") {
 
+
             numero2= display.value.split(operador)[1]; // Guarda el valor del display a numero2 i separa els valors per l'operador
             display.value = eval(parseFloat(numero1) + operador + parseFloat(numero2)); // Evalua la expressió
-            numero1 = display.value; // Guarda el resultat a numero1
-            numero2 = ""; // Esborra el valor de numero2
-            operador = ""; // Esborra el valor de operador
-            return; // Si és igual, no fa res més (no continua)
+            if (operador === "/" && numero2 ==="0"){
+                display.value = error1;
+                return;
+            }
+            else {
+
+                numero1 = display.value; // Guarda el resultat a numero1
+                numero2 = ""; // Esborra el valor de numero2
+                operador = ""; // Esborra el valor de operador
+
+                return; // Si és igual, no fa res més (no continua)
+            }
+
         }
 
-        if (button.id == "suma"){
+        if (button.id === "suma"){
 
             numero1 = display.value; // Guarda el valor del display a numero1
             operador = "+"; // Guarda el valor de l'operador
@@ -49,7 +61,7 @@ buttons.forEach (button => {
 
         }
 
-        if (button.id == "resta"){
+        if (button.id === "resta"){
 
             numero1 = display.value; // Guarda el valor del display a numero1
             operador = "-"; // Guarda el valor de l'operador
@@ -61,7 +73,7 @@ buttons.forEach (button => {
 
         }
 
-        if (button.id == "multiplicacio"){
+        if (button.id === "multiplicacio"){
 
             numero1 = display.value; // Guarda el valor del display a numero1
             operador = "*"; // Guarda el valor de l'operador
@@ -72,19 +84,21 @@ buttons.forEach (button => {
             return; // Si és suma, no fa res més (no continua)
         }
 
-        if (button.id == "divisio"){
+        if (button.id === "divisio"){
 
-            numero1 = display.value; // Guarda el valor del display a numero1
-            operador = "/"; // Guarda el valor de l'operador
-            display.value = operador;
-            display.value = numero1;
-            display.value += operador;
-            // Veure tota la operaico a la pantalla abans de fer la suma
-            return; // Si és suma, no fa res més (no continua)
+                numero1 = display.value; // Guarda el valor del display a numero1
+                operador = "/"; // Guarda el valor de l'operador
+                display.value = operador;
+                display.value = numero1;
+                display.value += operador;
+                // Veure tota la operaicó a la pantalla abans de fer la suma
+                return; // Si és suma, no fa res més (no continua)
+           
+
         }
 
       
-        if (button.id == "percentatge"){
+        if (button.id === "percentatge"){
             numero1 = display.value; // Guarda el valor del display a numero 1
             operador = "%"; // Guarda el valor de l'operador
             display.value = operador;
@@ -94,7 +108,7 @@ buttons.forEach (button => {
             return; // No continua
         }
 
-        if (button.id == "m+"){ // Suma un valor al valor guardat a la memòria
+        if (button.id === "m+"){ // Suma un valor al valor guardat a la memòria
             
             if (display.value !== "0") {
                 memory += parseFloat(display.value);
@@ -110,7 +124,7 @@ buttons.forEach (button => {
 
         }
 
-        if (button.id == "mr") { // Mostra el valor de la memòria
+        if (button.id === "mr") { // Mostra el valor de la memòria
             display.value = memory;
             return;
         }
@@ -120,9 +134,17 @@ buttons.forEach (button => {
             return; // Si esborra, no fa res més (no continua)
         }
 
+        if (button.id === "1/x") {
+
+            numero1 = "1"; // Guarda el valor del display a numero 1
+            numero2= display.value;
+            operador = "/";
+            display.value = numero1 + operador + numero2;
 
 
 
+            return;
+        }
 
 
         //
