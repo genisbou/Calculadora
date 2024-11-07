@@ -95,12 +95,18 @@ buttons.forEach (button => {
         }
 
         if (button.id == "m+"){ // Suma un valor al valor guardat a la memòria
-            memory += display.value;
+            
+            if (display.value !== "0") {
+                memory += parseFloat(display.value);
+            }
+
             return;
 
         }
         if (button.id === "m-"){ // Resta un valor al valor guardat a la memòria
 
+            memory -= parseFloat(display.value);
+            return;
 
         }
 
