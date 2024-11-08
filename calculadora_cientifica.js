@@ -190,7 +190,9 @@ buttons.forEach (button => {
             if (display.value >0) {
                 display.value = "-" + display.value;
             }
-            
+            else {
+                display.value = display.value.slice(1);
+            }
             return; 
 
 
