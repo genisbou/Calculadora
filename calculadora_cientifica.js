@@ -188,19 +188,22 @@ buttons.forEach (button => {
         if (button.id === "+/-"){
 
             if (display.value >0) {
-                display.value = buttonselect[1];
+                display.value = "-" + display.value;
             }
             else {
-                display.value = buttonselect[0];
+                display.value = "+" + display.value;
             }
 
 
         }
 
 
-        //
+        // Si es presiona +- no mostrar operador per display
+        if (button.id === "+/-") {
+            return;
+        }
 
-        if (display.value === "0" ) {
+        if (display.value === "0"  ) {
             display.value = buttonselect;  // Si el valor és 0, es mostra directament
         }
         else {
