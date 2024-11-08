@@ -2,8 +2,8 @@ let numero1 = "";
 let numero2 = "";
 let operador = "";
 let memory = 0;
-let resultat1_x = "";
-let error1= ("ERROR. No es pot dividir entre zero.");
+let resultat_arrel = "";
+let error1= ("ERROR. NO ES POT dividir entre/ zero.");
 
 
 // Seleccionar tots els components que tinguin el ID display
@@ -35,7 +35,16 @@ buttons.forEach (button => {
             const numeros_splitats = display.value.split(operador); //Separa els valors per l'operador
             numero1 = (parseFloat(numeros_splitats[0])); // Guarda el primer valor a numero1
             numero2= (parseFloat(numeros_splitats[1])); // Guarda el segon valor a numero2
+            // Mostra arrel quadrada
+            if (operador === "√") {
+                display.value = resultat_arrel; 
+                return;
+            }
             display.value = eval(parseFloat(numero1) + operador + parseFloat(numero2)); // Evalua la expressió
+
+            
+            
+            
             
            if (operador === "/" && numero2 === 0) {
                 display.value = error1;
@@ -50,6 +59,8 @@ buttons.forEach (button => {
 
                 return; // Si és igual, no fa res més (no continua)
             }
+
+
             
            
            
@@ -156,11 +167,12 @@ buttons.forEach (button => {
         if (button.id ==="arrel") {
             numero1 = display.value;
             operador = "√";
-            display.value = operador + numero1; // Mostra l'operació a la pantalla
-            // Guardar el resultat en una funcio
+            display.value = operador + numero1; // Mostra l'operació a la pantalla abans de fer-la
+            resultat_arrel = Math.sqrt(parseFloat(numero1)); // Calcula l'arrel quadrada
             return;
             
         }
+        
 
 
         //
