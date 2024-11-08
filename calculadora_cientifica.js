@@ -200,13 +200,11 @@ buttons.forEach (button => {
 
         //
 
-        if (display.value === "0") {
+        if (display.value === "0" || button.id == "+/-") {
             display.value = buttonselect;  // Si el valor és 0, es mostra directament
         }
         else {
-            if (display.value != "+/-") {
             display.value += buttonselect;  // Si no és 0, s'afegeix al valor existent
-            }
 
         }
 
