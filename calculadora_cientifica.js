@@ -190,8 +190,9 @@ buttons.forEach (button => {
     
             operador = "^";
             numeros_splitats = display.value.split(operador); // Separa els valors per l'operador
-            numero1 = (numeros_splitats[0]); // Guarda el primer valor a numero1
-            numero2 = (numeros_splitats[1]); // Guarda el segon valor a numero2
+            numero1 = display.value; // Guarda el primer valor a numero1
+            numero2 = display.value; // Guarda el segon valor a numero2
+            display.value = numero1 + operador + numero2; // Mostra l'operació a la pantalla abans de fer-la
             resultat_elevat = Math.pow(parseFloat(numero1), parseFloat(numero2)); // Calcula l'exponent
             return;
             
