@@ -3,7 +3,7 @@ let numero2 = "";
 let operador = "";
 let memory = 0;
 let resultat1_x = "";
-let error1 = ("ERROR. No es pot dividir entre zero.");
+let error1= ("ERROR. No es pot dividir entre zero.");
 
 
 // Seleccionar tots els components que tinguin el ID display
@@ -30,15 +30,19 @@ buttons.forEach (button => {
         }
 
         if (button.id === "igual") {
+           
 
-
-            numero2= display.value.split(operador)[1]; // Guarda el valor del display a numero2 i separa els valors per l'operador
+            const numeros_splitats = display.value.split(operador); //Separa els valors per l'operador
+            numero1 = (parseFloat(numeros_splitats[0])); // Guarda el primer valor a numero1
+            numero2= (parseFloat(numeros_splitats[1])); // Guarda el segon valor a numero2
             display.value = eval(parseFloat(numero1) + operador + parseFloat(numero2)); // Evalua la expressió
-            if (operador === "/" && numero2 ==="0"){
+            
+           if (operador === "/" && numero2 === 0) {
                 display.value = error1;
                 return;
             }
-            else {
+            
+            if (biutton.id === "divisio") {
 
                 numero1 = display.value; // Guarda el resultat a numero1
                 numero2 = ""; // Esborra el valor de numero2
@@ -46,6 +50,9 @@ buttons.forEach (button => {
 
                 return; // Si és igual, no fa res més (no continua)
             }
+            
+           
+           
 
         }
 
@@ -144,6 +151,15 @@ buttons.forEach (button => {
 
 
             return;
+        }
+
+        if (button.id ==="arrel") {
+            numero1 = display.value;
+            operador = "√";
+            display.value = operador + numero1; // Mostra l'operació a la pantalla
+            // Guardar el resultat en una funcio
+            return;
+            
         }
 
 
