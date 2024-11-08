@@ -188,10 +188,10 @@ buttons.forEach (button => {
         if (button.id === "+/-"){
 
             if (display.value >0) {
-                display.value = "-" + display.value;
+                display.value = buttonselect[1];
             }
             else {
-                display.value = "+" + display.value;
+                display.value = buttonselect[0];
             }
 
 
@@ -200,7 +200,7 @@ buttons.forEach (button => {
 
         //
 
-        if (display.value === "0" || button.id == "+/-") {
+        if (display.value === "0" ) {
             display.value = buttonselect;  // Si el valor és 0, es mostra directament
         }
         else {
