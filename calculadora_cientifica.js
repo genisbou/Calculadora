@@ -180,6 +180,22 @@ buttons.forEach (button => {
             return;
         }
         
+        if (button.id === "EE") {
+            // NOTACIO CIENTIFICA
+            
+        }
+
+        if (button.id === "+/-"){
+
+            if (display.value >0) {
+                display.value = "-" + display.value;
+            }
+            else {
+                display.value = "+" + display.value;
+            }
+
+
+        }
 
 
         //
