@@ -3,6 +3,7 @@ let numero2 = "";
 let operador = "";
 let memory = 0;
 let resultat_arrel = "";
+let resultat_elevat = "";
 let error1= ("ERROR. NO ES POT dividir entre/ zero.");
 
 
@@ -38,6 +39,11 @@ buttons.forEach (button => {
             // Mostra arrel quadrada
             if (operador === "√") {
                 display.value = resultat_arrel; 
+                return;
+            }
+            // Mostra l'exponent
+            if (operador === "^") {
+                display.value = resultat_elevat;
                 return;
             }
             display.value = eval(parseFloat(numero1) + operador + parseFloat(numero2)); // Evalua la expressió
@@ -180,13 +186,16 @@ buttons.forEach (button => {
             return;
         }
         
-        if (button.id === "EE") {
-            // NOTACIO CIENTIFICA
-            numero1 = display.value;
-            numero2 = display.value;
-            display.value = math.pow(numero1, numero2);
+        if (button.id === "EE") { // Elevat a l'exponent
+    
+            operador = "^";
+            numeros_splitats = display.value.split(operador); // Separa els valors per l'operador
+            numero1 = (numeros_splitats[0]); // Guarda el primer valor a numero1
+            numero2 = (numeros_splitats[1]); // Guarda el segon valor a numero2
+            resultat_elevat = Math.pow(parseFloat(numero1), parseFloat(numero2)); // Calcula l'exponent
             return;
             
+
         }
 
         if (button.id === "+/-"){
