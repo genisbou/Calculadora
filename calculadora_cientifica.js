@@ -172,6 +172,13 @@ buttons.forEach (button => {
             return;
             
         }
+
+        if (button.id === "x2") {
+            numero1 = display.value;
+            operador = "*";
+            display.value = numero1 + operador + numero1; // Mostra l'operació a la pantalla abans de fer-la
+            return;
+        }
         
 
 
