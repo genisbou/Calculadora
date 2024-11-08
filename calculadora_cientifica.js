@@ -187,6 +187,10 @@ buttons.forEach (button => {
 
         if (button.id === "+/-"){
 
+            if (display.value === "0") {
+                return; // Si és 0, no fa res més (no continua)
+            }
+
             if (display.value >0) {
                 display.value = "-" + display.value;
             }
