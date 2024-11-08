@@ -3,7 +3,6 @@ let numero2 = "";
 let operador = "";
 let memory = 0;
 let resultat_arrel = "";
-let resultat_elevat = "";
 let error1= ("ERROR. NO ES POT dividir entre/ zero.");
 
 
@@ -43,14 +42,13 @@ buttons.forEach (button => {
             }
             // Mostra l'exponent
             if (operador === "^") {
-                display.value = resultat_elevat;
+
+                display.value = Math.pow(parseFloat(numero1), parseFloat(numero2));
+                
                 return;
             }
             display.value = eval(parseFloat(numero1) + operador + parseFloat(numero2)); // Evalua la expressió
 
-            
-            
-            
             
            if (operador === "/" && numero2 === 0) {
                 display.value = error1;
@@ -187,16 +185,11 @@ buttons.forEach (button => {
         }
         
         if (button.id === "EE") { // Elevat a l'exponent
-    
+            numero1 = display.value;
             operador = "^";
-            numeros_splitats = display.value.split(operador); // Separa els valors per l'operador
-            numero1 = display.value; // Guarda el primer valor a numero1
-            numero2 = display.value; // Guarda el segon valor a numero2
-            display.value = numero1 + operador + numero2; // Mostra l'operació a la pantalla abans de fer-la
-            resultat_elevat = Math.pow(parseFloat(numero1), parseFloat(numero2)); // Calcula l'exponent
+            display.value = numero1 + operador; // Mostra l'operació a la pantalla abans de fer-la
+        
             return;
-            
-
         }
 
         if (button.id === "+/-"){
