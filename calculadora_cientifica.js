@@ -204,7 +204,9 @@ buttons.forEach (button => {
             display.value = buttonselect;  // Si el valor és 0, es mostra directament
         }
         else {
+            if (display.value != "+/-") {
             display.value += buttonselect;  // Si no és 0, s'afegeix al valor existent
+            }
 
         }
 
