@@ -182,6 +182,10 @@ buttons.forEach (button => {
         
         if (button.id === "EE") {
             // NOTACIO CIENTIFICA
+            numero1 = display.value;
+            numero2 = display.value;
+            display.value = math.pow(numero1, numero2);
+            return;
             
         }
 
