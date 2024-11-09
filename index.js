@@ -6,14 +6,18 @@ const browserInfo = {
     lang : navigator.language,
     // Dades del hostname URL
     href: window.location.href,
-    // Dades de la darrera modificació de la calculadora
-    lastModified_calculadora: calculadora.html.lastModified
     
-
-
   
 };
-  
+
+// Funcio per obtenir la darrera modificació de la calculadora
+function getModificationDate() {
+    const date = new Date(document.lastModified);
+    return ;
+  }
+
+
+
   // Mostrar la informació en el document HTML
   document.getElementById("browser-info").innerHTML = `
     <p>Navegador: ${browserInfo.browserName}</p>
@@ -21,5 +25,6 @@ const browserInfo = {
     <p>Sistema Operatiu: ${browserInfo.os}</p>
     <p>Llenguatge: ${browserInfo.lang}</p>
     <p>URL: ${browserInfo.href}</p>
-    <p>Última modificació de la calculadora: ${browserInfo.lastModified_calculadora}</p>
+    <p>Última modificació de la calculadora: ${getModificationDate()}</p>
+    
   `;
