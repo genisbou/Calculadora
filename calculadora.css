@@ -39,7 +39,7 @@
 
 }
 /* 
-Fer la calculadora responsive per a mobils i tablets. 
+Fer la calculadora responsive per a mobils. 
 */
 
 @media screen and (max-width: 600px) {
@@ -83,6 +83,54 @@ Fer la calculadora responsive per a mobils i tablets.
         width: 100%;
         height: 50px;
 
+    }
+    #clear {
+        width: 100%;
+        height: 50px;
+    }
+}
+/* 
+Fer la calculadora responsive per a tablets. Ipad */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .display {
+        width: 50%;
+        height: 20px;
+        text-align: right;
+        
+    }
+    .button {
+        width: 100%;
+        height: 50px;
+
+    }
+    #zero {
+        width: 100%;
+        height: 50px;
+    
+    }
+    #divisio, #multiplicacio, #restar, #sumar {
+        width: 100%;
+        height: 50px;
+    
+    }
+    #igual {
+        width: 100%;
+        height: 50px;
+        
+    }
+    #del {
+        width: 100%;
+        height: 50px;
+        
     }
     #clear {
         width: 100%;
