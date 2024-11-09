@@ -4,6 +4,10 @@ const browserInfo = {
     browserVersion: navigator.userAgent.match(/(\d+(?:\.\d+)+)/)[0],
     os: navigator.platform,
     lang : navigator.language,
+    // Dades del hostname URL
+    href: window.location.href,
+    port: window.location.port,
+
   
 };
   
@@ -13,4 +17,6 @@ const browserInfo = {
     <p>Versió: ${browserInfo.browserVersion}</p>
     <p>Sistema Operatiu: ${browserInfo.os}</p>
     <p>Llenguatge: ${browserInfo.lang}</p>
+    <p>URL: ${browserInfo.href}</p>
+    <p>Port: ${browserInfo.port}</p
   `;
