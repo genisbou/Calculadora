@@ -11,10 +11,14 @@ const browserInfo = {
   
 };
 
-
-
-
-
+// Go back 
+function goBack() {
+    window.history.back();
+}
+// Go forward
+function goForward() {
+    window.history.forward();
+}
 
   // Mostrar la informació en el document HTML
   document.getElementById("browser-info").innerHTML = `
@@ -27,3 +31,8 @@ const browserInfo = {
     
     
   `;
+
+// Go back button
+document.getElementById("go-back").addEventListener("click", goBack);
+// Go forward button
+document.getElementById("go-forward").addEventListener("click", goForward);
