@@ -12,4 +12,5 @@ const browserInfo = {
     <p>Navegador: ${browserInfo.browserName}</p>
     <p>Versió: ${browserInfo.browserVersion}</p>
     <p>Sistema Operatiu: ${browserInfo.os}</p>
+    <p>Llenguatge: ${browserInfo.lang}</p>
   `;
