@@ -44,35 +44,49 @@ Fer la calculadora responsive per a mobils i tablets.
 
 @media screen and (max-width: 600px) {
     body {
-        text-align: center;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .display {
+        width: 100%;
+        height: 50px;
+        text-align: right;
+        
     }
     .button {
         width: 100%;
-        text-align: center;
+        height: 50px;
 
     }
     #zero {
         width: 100%;
+        height: 50px;
+
+
     }
     #divisio, #multiplicacio, #restar, #sumar {
         width: 100%;
+        height: 50px;
+
     }
     #igual {
         width: 100%;
+        height: 50px;
+
     }
     #del {
         width: 100%;
+        height: 50px;
+
     }
     #clear {
         width: 100%;
+        height: 50px;
     }
 }
-
-
-
-
-
-
-
-
 
