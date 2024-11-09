@@ -6,7 +6,10 @@ const browserInfo = {
     lang : navigator.language,
     // Dades del hostname URL
     href: window.location.href,
-    port: window.location.port,
+    // Dades de la darrera modificació de la calculadora
+    lastModified_calculadora: calculadora.html.lastModified
+    
+
 
   
 };
@@ -18,5 +21,4 @@ const browserInfo = {
     <p>Sistema Operatiu: ${browserInfo.os}</p>
     <p>Llenguatge: ${browserInfo.lang}</p>
     <p>URL: ${browserInfo.href}</p>
-    <p>Port: ${browserInfo.port}</p
   `;
