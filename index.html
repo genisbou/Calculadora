@@ -9,46 +9,12 @@
     <meta name="keywords" content="html,cheatsheet" />
     <meta property="fb:admins" content="YourFacebookUsername" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="calculadora.css">
+    <link rel="stylesheet" href="">
     <!-- Link JS file with defer attribute -->
-    <script defer src="calculadora.js"></script>
+    <script defer src="index.js"></script>
 </head>
 <body>
-    <!-- Calculadora javascript amb botons -->
-    <!-- Pantalla  -->
-    <input type="text" id="display" class="display" value="0" disabled>
-    <table>
-        <!-- Operacions  -->
-        <tr>
-            <td><input type="button" id="clear" value="C" class="button"></td>
-            <td><input type="button" id="del" value="←" class="button"></td>
-            <td><input type="button" id="divisio" value="÷" class="button"></td>
-            <td><input type="button" id="multiplicacio" value="x" class="button"></td>
-        </tr>
-        <tr>
-            <td><input type="button" id="7" value="7" class="button"></td>
-            <td><input type="button" id="8" value="8" class="button"></td>
-            <td><input type="button" id="9" value="9" class="button"></td>
-            <td><input type="button" id="resta" value="-" class="button"></td>
-        </tr>
-        <tr>
-            <td><input type="button" id="4" value="4" class="button"></td>
-            <td><input type="button" id="5" value="5" class="button"></td>
-            <td><input type="button" id="6" value="6" class="button"></td>
-            <td><input type="button" id="suma" value="+" class="button"></td>
-        </tr>
-        <tr>
-            <td><input type="button" id="1" value="1" class="button"></td>
-            <td><input type="button" id="2" value="2" class="button"></td>
-            <td><input type="button" id="3" value="3" class="button"></td>
-            <td><input type="button" id="igual" value="=" class="button"></td>
-        </tr>
-        <tr>
-            <td colspan="2"><input type="button" id="zero" value="0" class="button"></td>
-            <td><input type="button" id="punt" value="." class="button"></td>
-        </tr>
-    </table>
-
-          
+    <!-- Mostrar informació del navegador de l'usuari -->
+    <div id="browser-info"></div>
 </body>
 </html>
