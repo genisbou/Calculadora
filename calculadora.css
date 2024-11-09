@@ -40,26 +40,32 @@
 }
 /* 
 Fer la calculadora responsive per a mobils i tablets. 
-centrar els elements i fer que ocupin tot l'ample de la pantalla.
 */
 
- @media (max-width: 768px) {
-    body {
-        background-color: #f2f2f2;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
+@media screen and (max-width: 600px) {
     .button {
         width: 100%;
     }
     .display {
         width: 100%;
     }
+    #zero {
+        width: 100%;
+    }
+    #divisio, #multiplicacio, #restar, #sumar {
+        width: 100%;
+    }
+    #igual {
+        width: 100%;
+    }
+    #del {
+        width: 100%;
+    }
+    #clear {
+        width: 100%;
+    }
 }
+
 
 
 
