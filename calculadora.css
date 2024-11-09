@@ -39,48 +39,34 @@
 
 }
 /* 
-Fer la calculadora responsive per a mobils i tablets. centrar la calculadora per ocupar la pantalla sencera.
+Fer la calculadora responsive per a mobils i tablets. 
 */
 
+@media screen and (max-width: 600px) {
+    body {
+        text-align: center;
+    }
+    .button {
+        width: 100%;
+        text-align: center;
 
-
-
-    @media (max-width: 768px) {
-        .button {
-            width: 25%;
-        }
-        }
-
-        @media (max-width: 768px) {
-            #zero {
-                width: 50%;
-            }
-            }
-
-            @media (max-width: 768px) {
-                #del {
-                    width: 50%;
-                }
-                }
-
-                @media (max-width: 768px) {
-                    #clear {
-                        width: 50%;
-                    }
-                    }
-
-                    @media (max-width: 768px) {
-                        #igual {
-                            width: 50%;
-                        }
-                        }
-
-                        @media (max-width: 768px) {
-                            #divisio, #multiplicacio, #restar, #sumar {
-                                width: 50%;
-                            }
-                            }
-
+    }
+    #zero {
+        width: 100%;
+    }
+    #divisio, #multiplicacio, #restar, #sumar {
+        width: 100%;
+    }
+    #igual {
+        width: 100%;
+    }
+    #del {
+        width: 100%;
+    }
+    #clear {
+        width: 100%;
+    }
+}
 
 
 
