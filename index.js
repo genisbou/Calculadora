@@ -21,4 +21,5 @@ const browserInfo = {
     <p>Sistema Operatiu: ${browserInfo.os}</p>
     <p>Llenguatge: ${browserInfo.lang}</p>
     <p>URL: ${browserInfo.href}</p>
+    <p>Última modificació de la calculadora: ${browserInfo.lastModified_calculadora}</p>
   `;
