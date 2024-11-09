@@ -59,8 +59,8 @@ Fer la calculadora responsive per a mobils i tablets.
         
     }
     .button {
-        width: 100%;
-        height: 50px;
+        width: 50%;
+        height: 20px;
 
     }
     #zero {
