@@ -36,3 +36,8 @@ function goForward() {
 document.getElementById("go-back").addEventListener("click", goBack);
 // Go forward button
 document.getElementById("go-forward").addEventListener("click", goForward);
+
+// Si es prem el boto settings, preguntar nom usuariç
+document.getElementById("settings").addEventListener("click", () => {
+    let username = prompt("Introdueix el teu nom d'usuari");
+});
