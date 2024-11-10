@@ -1,7 +1,7 @@
 let numero1 = "";
 let numero2 = "";
 let operador = "";
-let error1= ("ERROR. NO ES POT dividir entre/ zero.");
+let error1= ("ERROR no es pot dividir/0.");
 
 
 // Seleccionar tots els components que tinguin el ID display
@@ -77,7 +77,12 @@ buttons.forEach (button => {
             return; // Si és suma, no fa res més (no continua)
         }
 
-        if (button.id == "divisio" && numero2 !== 0){
+        if (operador === "/" && numero2 === 0) {
+            display.value = error1;
+            return;
+        }
+
+        if (button.id == "divisio"){
 
             numero1 = display.value; // Guarda el valor del display a numero1
             operador = "/"; // Guarda el valor de l'operador
@@ -86,9 +91,6 @@ buttons.forEach (button => {
             display.value += operador; 
             // Veure tota la operaico a la pantalla abans de fer la suma
             return; // Si és suma, no fa res més (no continua)
-        } else if (numero2 == 0) {
-            display.value = error1;
-            return;
         }
                        
 
