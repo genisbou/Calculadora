@@ -39,50 +39,29 @@
 
 }
 /* 
-Fer la calculadora responsive per a mobils 
+Fer la calculadora responsive per a dispositius mòbils
 */
-@media only screen and (max-width: 600px) {
-    /* width display no pot ocupar tota la pantalla */
+@media screen and (min-width: 0px) and (max-width: 319px) {
     .display {
-        width: 90%;
+        width: 70%;
         height: 20px;
         text-align: right;
     }
-    .botons {
+    body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual, #del, #clear {
         width: 90%;
         height: 50px;
     }
-    #zero, #igual, #clear {
-        width: 90%;
-        height: 50px;
-        
-    }
-    #divisio, #multiplicacio, #restar, #sumar {
-        width: 90%;
-        height: 50px;
-    }
-    #del {
-        width: 90%;
-        height: 50px;
-        }
-    #clear {
-        width: 90%;
-        height: 50px;
-
-    }
-    #igual {
-        width: 90%;
-        height: 50px;
-
-    }
-    #zero {
-        width: 90%;
-        height: 50px;
-
-    }
-    
-    
 }
+
 /* Calculadora responsive per a mòbils orientacio landscape */
 @media screen and (min-width: 320px) and (max-width: 600px) {
     .display {
