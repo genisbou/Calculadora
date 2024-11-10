@@ -39,14 +39,17 @@
 
 }
 /* 
-Fer la calculadora responsive per a dispositius mòbils
+Fer la calculadora responsive per mòbils vertical. 412 * 915
+
 */
-@media screen and (min-width: 0px) and (max-width: 319px) {
+@media only screen and (max-width: 412px) and (max-height: 915px) {
+
     .display {
-        width: 70%;
+        width: 80%;
         height: 20px;
         text-align: right;
     }
+
     body {
         width: 100%;
         height: 100vh;
@@ -55,12 +58,13 @@ Fer la calculadora responsive per a dispositius mòbils
         justify-content: center;
         align-items: center;
     }
-   
+
     .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual, #del, #clear {
         width: 90%;
         height: 50px;
     }
 }
+
 
 /* Calculadora responsive per a mòbils orientacio landscape */
 @media screen and (min-width: 320px) and (max-width: 600px) {
