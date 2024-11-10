@@ -108,7 +108,7 @@
 }
 
 /* Fer la calculadora responsive per a mobils en horitzontal  */
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+@media screen and (min-width: 412px) and (max-width: 915px) {
     .display {
         width: 40%;
         max-width: 40%;
