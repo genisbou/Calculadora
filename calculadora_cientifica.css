@@ -55,7 +55,7 @@
 }
 
 /* Calculadora responsive per a mòbils orientacio landscape 915 X 412 */
-@media only screen and (max-width: 915px) and (orientation: landscape) and (max-height: 412px) {
+@media only screen and (min-width: 412px) and (max-width: 767px) {
     .display {
         width: 70%;
         height: 20px;
