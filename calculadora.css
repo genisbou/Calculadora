@@ -41,7 +41,6 @@
 /* 
 Fer la calculadora responsive per a mobils. 
 */
-
 @media screen and (max-width: 600px) {
     body {
         width: 100%;
@@ -50,47 +49,21 @@ Fer la calculadora responsive per a mobils.
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
     }
     .display {
-        width: 50%;
+        width: 90%;
         height: 20px;
         text-align: right;
-        
     }
-    .button {
-        width: 100%;
-        height: 50px;
-
-    }
-    #zero {
-        width: 100%;
-        height: 50px;
-
-
-    }
-    #divisio, #multiplicacio, #restar, #sumar {
-        width: 100%;
-        height: 50px;
-
-    }
-    #igual {
-        width: 100%;
-        height: 50px;
-
-    }
-    #del {
-        width: 100%;
-        height: 50px;
-
-    }
-    #clear {
-        width: 100%;
+    .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual, #del, #clear {
+        width: 90%;
         height: 50px;
     }
 }
+
 /* 
-Fer la calculadora responsive per a tablets. Ipad */
+Fer la calculadora responsive per a tablets. Ipad 
+*/
 @media screen and (min-width: 601px) and (max-width: 1024px) {
     body {
         width: 100%;
@@ -99,130 +72,53 @@ Fer la calculadora responsive per a tablets. Ipad */
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
     }
     .display {
-        width: 40%;
-        height: 20px;
+        width: 70%;
+        height: 30px;
         text-align: right;
-        
     }
-    .button {
-        width: 100%;
-        height: 50px;
-
-    }
-    #zero {
-        width: 100%;
-        height: 50px;
-    
-    }
-    #divisio, #multiplicacio, #restar, #sumar {
-        width: 100%;
-        height: 50px;
-    
-    }
-    #igual {
-        width: 100%;
-        height: 50px;
-        
-    }
-    #del {
-        width: 100%;
-        height: 50px;
-        
-    }
-    #clear {
-        width: 100%;
+    .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual, #del, #clear {
+        width: 70%;
         height: 50px;
     }
 }
 
 /* Calculadora responsive per a mòbils orientacio landscape */
-@media screen and (min-width: 320px) and (max-width: 600px)
-{
+@media screen and (min-width: 320px) and (max-width: 600px) {
     .display {
-        width: 50%;
+        width: 90%;
         height: 20px;
         text-align: right;
-        
     }
-    .button {
-        width: 100%;
+    .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual, #del, #clear {
+        width: 90%;
         height: 50px;
-
     }
-    #zero {
-        width: 100%;
-        height: 50px;
-}
-#divisio, #multiplicacio, #restar, #sumar {
-    width: 100%;
-    height: 50px;
-}
-#igual {
-    width: 100%;
-    height: 50px;
-    }
-
-#del {
-    width: 100%;
-    height: 50px;
-    }
-    #clear {
-        width: 100%;
-        height: 50px;
-        }
- 
 }
 
 /* Calculadora responsive per a tablets orientacio landscape */
-@media screen and (min-width: 810px) and (max-width: 1080px)
-{
+@media screen and (min-width: 810px) and (max-width: 1080px) {
     .display {
-        width: 50%;
-        height: 20px;
-        text-align: right;
-    }
-    .button {
-        width: 100%;
-        height: 50px;
-
-    }
-    #zero {
-        width: 100%;
-        height: 50px;
-         
-    }
-
-    #divisio, #multiplicacio, #restar, #sumar {
-        width: 100%;
-        height: 50px;
-    }
-    #igual {
-        width: 100%;
-        height: 50px;
-    }
-    #del {
-        width: 100%;
-        height: 50px;
-    }
-    #clear {
-        width: 100%;
-        height: 50px;
-    }
-
-         
-}
-/* Calculadora responsive per a pantalles més grans */
-@media screen and (min-width: 1081px) {
-    .display {
-        width: 40%;
+        width: 70%;
         height: 30px;
         text-align: right;
     }
     .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual, #del, #clear {
-        width: 80%;
+        width: 70%;
+        height: 50px;
+    }
+}
+
+/* Calculadora responsive per a pantalles més grans */
+@media screen and (min-width: 1081px) {
+    .display {
+        width: 50%;
+        height: 40px;
+        text-align: right;
+    }
+    .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual, #del, #clear {
+        width: 50%;
         height: 60px;
     }
 }
