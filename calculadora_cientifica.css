@@ -54,8 +54,8 @@
     }
 }
 
-/* Fer la calculadora responsive per a mòbils orientation landscape */
-@media only screen and (max-width: 412px) and (max-height: 915px) and (orientation: landscape) {
+/* Calculadora responsive per a mòbils orientacio landscape 915 X 412 */
+@media only screen and (max-width: 915px) and (orientation: landscape) {
     .display {
         width: 70%;
         height: 20px;
@@ -70,15 +70,17 @@
         align-items: center;
         padding: 20px; /* Añadir más padding para evitar que se vea apretado */
     }
-    .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual {
+    .button, #zero, #divisio, #multiplicacio, #restar, #sumar {
         width: 90%;
-        height: 50px;
-        margin-bottom: 10px; /* Añadir margen inferior para separar los botones */
+        height: 40px; /* Reducir la altura de los botones */
+        margin-bottom: 5px; /* Añadir margen inferior para separar los botones */
+    }
+    #igual {
+        width: 90%;
+        height: 40px; /* Reducir la altura del botón igual */
+        margin-top: 10px; /* Añadir margen superior para separar del resto */
     }
 }
-
-
-
 
 /* 
 Fer la calculadora responsive per a tablets vertical. Ipad 810 X 1080
