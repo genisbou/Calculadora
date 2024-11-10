@@ -45,11 +45,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 10px; /* Añadir padding para evitar que se vea apretado */
+        padding: 20px; /* Añadir más padding para evitar que se vea apretado */
     }
     .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual {
         width: 90%;
         height: 50px;
+        margin-bottom: 10px; /* Añadir margen inferior para separar los botones */
     }
 }
 
@@ -77,7 +78,7 @@
 }
 
 /* 
-Fer la calculadora responsive per a tablets. Ipad
+Fer la calculadora responsive per a tablets vertical. Ipad 810 X 1080
 */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
     body {
@@ -99,7 +100,7 @@ Fer la calculadora responsive per a tablets. Ipad
     }
 }
 
-/* Fer la calculadora responsive per a tauletes en orientacio horitzontal de 1080 */
+/* Fer la calculadora responsive per a tauletes en orientacio horitzontal de 1080 X 810 */
 @media screen and (min-width: 1025px) and (max-width: 1080px) {
     body {
         width: 100%;
