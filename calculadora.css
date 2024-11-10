@@ -45,7 +45,7 @@ Fer la calculadora responsive per mòbils vertical. 412 * 915
 @media only screen and (max-width: 412px) and (max-height: 915px) {
 
     .display {
-        width: 80%;
+        width: 60%;
         height: 20px;
         text-align: right;
     }
