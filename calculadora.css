@@ -177,7 +177,7 @@ Fer la calculadora responsive per a tablets. Ipad */
 }
 
 /* Calculadora responsive per a tablets orientacio landscape */
-@media screen and (min-width: 810px) and (max-width: 1080px)
+@media screen and (min-width:1081px)
 {
     .display {
         width: 50%;
