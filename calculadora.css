@@ -51,7 +51,7 @@ Fer la calculadora responsive per a mobils.
         align-items: center;
     }
     .display {
-        width: 90%;
+        width: 60%;
         height: 20px;
         text-align: right;
     }
@@ -74,9 +74,32 @@ Fer la calculadora responsive per a mobils.
 }
 
 /* 
-Fer la calculadora responsive per a tablets. Ipad vertical i horizontal.
+Fer la calculadora responsive per a tablets. Ipad
 */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .display {
+        width: 40%;
+        height: 20px;
+        text-align: right;
+    }
+    .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual, #del, #clear {
+        width: 100%;
+        height: 50px;
+    }
+
+}
+
+/* Fer la calculadora responsive per a tauletes en orientacio horitzontal de 1080 */
+@media screen and (min-width: 1025px) and (max-width: 1080px) {
     body {
         width: 100%;
         height: 100vh;
