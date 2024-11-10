@@ -87,7 +87,7 @@ Fer la calculadora responsive per mòbils vertical. 412 * 915 . Display no pot o
     }
     .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual, #del, #clear {
         width: 90%;
-        height: 50px;
+        height: 30px;
     }
 }
 
