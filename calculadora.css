@@ -175,3 +175,41 @@ Fer la calculadora responsive per a tablets. Ipad */
         }
  
 }
+
+/* Calculadora responsive per a tablets orientacio landscape */
+@media screen and (min-width: 768px) and (max-width: 1024px)
+{
+    .display {
+        width: 50%;
+        height: 20px;
+        text-align: right;
+    }
+    .button {
+        width: 100%;
+        height: 50px;
+
+    }
+    #zero {
+        width: 100%;
+        height: 50px;
+         
+    }
+
+    #divisio, #multiplicacio, #restar, #sumar {
+        width: 100%;
+        height: 50px;
+    }
+    #igual {
+        width: 100%;
+        height: 50px;
+    }
+    #del {
+        width: 100%;
+        height: 50px;
+    }
+    #clear {
+        width: 100%;
+        height: 50px;
+    }
+         
+}
