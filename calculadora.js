@@ -77,7 +77,7 @@ buttons.forEach (button => {
             return; // Si és suma, no fa res més (no continua)
         }
 
-        if (button.id == "divisio"){
+        if (button.id == "divisio" && numero2 !== 0){
 
             numero1 = display.value; // Guarda el valor del display a numero1
             operador = "/"; // Guarda el valor de l'operador
@@ -86,10 +86,9 @@ buttons.forEach (button => {
             display.value += operador; 
             // Veure tota la operaico a la pantalla abans de fer la suma
             return; // Si és suma, no fa res més (no continua)
-            if (operador === "/" && numero2 === 0) {
-                display.value = error1;
-                return;
-            }
+        } else if (numero2 == 0) {
+            display.value = error1;
+            return;
         }
                        
 
