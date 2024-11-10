@@ -81,18 +81,28 @@ Fer la calculadora responsive per mòbils vertical. 412 * 915 . Display no pot o
 }
 
 
-/* Calculadora responsive per a mòbils orientacio landscape */
-@media screen and (min-width: 320px) and (max-width: 600px) {
+/* Calculadora responsive per a mòbils orientacio landscape 915 X 412 */
+@media screen and (min-width: 412px) and (max-width: 915px) {
     .display {
-        width: 90%;
-        height: 10px;
+        width: 70%;
+        max-width: 70%;
+        height: 20px;
         text-align: right;
+    }
+    body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual {
         width: 90%;
-        height: 30px;
-    }
+        height: 50px;
+        }
 }
+
 
 /* 
 Fer la calculadora responsive per a tablets. Ipad
