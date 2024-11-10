@@ -28,41 +28,39 @@ buttons.forEach (button => {
             }
             else{ // Si no, esborra l'últim caràcter
                 display.value = display.value.slice(0, -1);
-                return; //  no fa res més (no continua)
+                return; //  Si esborra, no fa res més (no continua)
             }
         }
 
         if (button.id === "igual") {
             
-            numero2= display.value.split(operador)[1]; // Guarda el valor del display a numero2 i separa els valors per l'operador
-            display.value = eval(parseFloat(numero1) + operador + parseFloat(numero2)); // Evalua la expressió
-            numero1 = display.value; // Guarda el resultat a numero1
-            numero2 = ""; // Esborra el valor de numero2
-            operador = ""; // Esborra el valor de operador
-            return; // Si és igual, no fa res més (no continua)
-        }
+           
+            const numeros_splitats = display.value.split(operador); //Separa els valors per l'operador
+            numero1 = (parseFloat(numeros_splitats[0])); // Guarda el primer valor a numero1
+            numero2= (parseFloat(numeros_splitats[1])); // Guarda el segon valor a numero2
+        
 
         if (button.id == "suma"){
             
             numero1 = display.value; // Guarda el valor del display a numero1
             operador = "+"; // Guarda el valor de l'operador
             display.value = operador;
-            display.value = numero1; 
-            display.value += operador; 
+            display.value = numero1;
+            display.value += operador;
             // Veure tota la operaico a la pantalla abans de fer la suma
             return; // Si és suma, no fa res més (no continua)
             
         }
 
         if (button.id == "resta"){
-
+            
             numero1 = display.value; // Guarda el valor del display a numero1
             operador = "-"; // Guarda el valor de l'operador
             display.value = operador;
-            display.value = numero1; 
-            display.value += operador; 
+            display.value = numero1;
+            display.value += operador;
             // Veure tota la operaico a la pantalla abans de fer la suma
-            return; // no fa res més (no continua)
+            return; // Si és suma, no fa res més (no continua)
 
         }
 
@@ -71,28 +69,26 @@ buttons.forEach (button => {
             numero1 = display.value; // Guarda el valor del display a numero1
             operador = "*"; // Guarda el valor de l'operador
             display.value = operador;
-            display.value = numero1; 
-            display.value += operador; 
+            display.value = numero1;
+            display.value += operador;
             // Veure tota la operaico a la pantalla abans de fer la suma
-            return; // no fa res més (no continua)
+            return; // Si és suma, no fa res més (no continua)
         }
 
-     
+        
 
         if (button.id == "divisio" ){
 
             numero1 = display.value; // Guarda el valor del display a numero1
-            operador = "/"; // Guarda el valor de l'operador
-            display.value = operador;
-            display.value = numero1; 
-            display.value += operador; 
-            // Veure tota la operaico a la pantalla abans de fer la suma
-            if (operador === "/" && numero2 === "0") {
-                display.value = error1;
-            }
-            return; // no fa res més (no continua)
+                operador = "/"; // Guarda el valor de l'operador
+                display.value = operador;
+                display.value = numero1;
+                display.value += operador;
+                // Veure tota la operaicó a la pantalla abans de fer la suma
+                return; // Si és suma, no fa res més (no continua)
         }
-                       
+        
+    }         
 
         if (display.value === "0") { 
             display.value = buttonselect;  // Si el valor és 0, es mostra directament
