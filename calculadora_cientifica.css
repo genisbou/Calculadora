@@ -31,14 +31,50 @@
 
 }
 
-#del {
 
-	background-color: blue;
 
-}
 
-#clear {
 
-	background-color: red;
+/* Fer la calculadora responsive per a mòbils */
+@media screen and (max-width: 600px) {
+    @media screen and (max-width: 600px) {
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .display {
+            width: 50%;
+            height: 20px;
+            text-align: right;
+            
+        }
+        .button {
+            width: 100%;
+            height: 50px;
+    
+        }
+        #zero {
+            width: 100%;
+            height: 50px;
+    
+    
+        }
+        #divisio, #multiplicacio, #restar, #sumar {
+            width: 100%;
+            height: 50px;
+    
+        }
+        #igual {
+            width: 100%;
+            height: 50px;
+    
+        }
+       
+    }
 
 }
