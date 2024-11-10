@@ -75,12 +75,6 @@
 
 /* Fer la calculadora responsive per a mòbils en horitzontal */
 @media screen and (min-width: 412px) and (max-width: 915px) {
-    .display {
-        width: 70%;
-        height: 20px;
-        text-align: right;
-        margin-bottom: 10px;
-    }
     body {
         width: 100%;
         height: 100vh;
@@ -89,6 +83,12 @@
         justify-content: center;
         align-items: center;
         padding: 10px;
+    }
+    .display {
+        width: 70%;
+        height: 20px;
+        text-align: right;
+        margin-bottom: 10px;
     }
     .button, #divisio, #multiplicacio, #restar, #sumar, #zero, #igual {
         width: 90%;
@@ -99,11 +99,6 @@
 
 /* Fer la calculadora responsive per a tauletes 1080 * 810 */
 @media screen and (min-width: 1080px) and (max-width: 1366px) {
-    .display {
-        width: 40%;
-        height: 20px;
-        text-align: right;
-    }
     body {
         width: 100%;
         height: 100vh;
@@ -112,7 +107,12 @@
         justify-content: center;
         align-items: center;
     }
-    .button, #divisio, #multiplicacio, #restar, #sumar, #zero, #igual {
+    .display {
+        width: 40%;
+        height: 20px;
+        text-align: right;
+    }
+    .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual {
         width: 100%;
         height: 50px;
     }
