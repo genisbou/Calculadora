@@ -25,32 +25,25 @@
 }
 
 
-/* calculadora responsive i es visualitzara de forma correcta en :
-ordinador,
-tablet i mòbil. */
 
-/* Ipad IPadOS 14.7.1 : orientació landscape (1080x810) 
-Ipad IPadOS 14.7.1 : orientació portrait (810x1080)
-Samsung Galaxy S20 Ultra Android 11 : landscape ( 412x 915)
-
-
-Samsung Galaxy S20 Ultra Android 11 : portrait ( 412x 915) */ 
-
- @media only screen and (max-width: 1080px) {
+@media screen and (max-width: 412px) {
     .button {
-        padding: 10px 10px;
-        font-size: 12px;
-        margin: 2px 1px;
-        width: 30px;
+        width: 25px;
     }
-
     .display {
-        padding: 10px 10px;
-        font-size: 12px;
-        width: 150px;
-    }
-
-    #igual {
-        width: 150px;
+        width: 200px;
     }
 }
+
+@media screen and (max-width: 810px) {
+    .button {
+        width: 25px;
+    }
+    .display {
+        width: 200px;
+    }
+
+}
+
+
+
