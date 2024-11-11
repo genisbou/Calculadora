@@ -58,7 +58,8 @@ body, html {
 }
 
 /* Dispositius mòbils - Samsung Galaxy S20 Ultra (vertical 412 X 915) */
-@media screen and (max-width: 412px) and (orientation: portrait) {
+
+@media screen and (max-width: 412px) and (max-height: 915px) {
     .calculator-container {
         width: 90%;
     }
