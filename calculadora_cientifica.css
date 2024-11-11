@@ -26,76 +26,116 @@
 
 
 
-@media screen and (max-width: 412px) and (max-height: 915px) {
+/* Fer la pagina responsive per a que es vegi bé en un dispositiu mòbil. Samsung Galaxy S20 ultra Android 11 412*915 en vertical i 915*412 en horitzontal. */
+
+@media screen and (max-width: 412px) {
     .button {
         width: 25px;
+        padding: 10px 10px;
+        font-size: 12px;
     }
+
     .display {
+        width: 200px;
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+
+    #igual {
         width: 200px;
     }
 }
-@media screen and (max-width: 915px) and (max-height: 412px) {
+
+@media screen and (max-width: 915px) {
     .button {
         width: 25px;
+        padding: 10px 10px;
+        font-size: 12px;
     }
+
     .display {
+        width: 200px;
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+
+    #igual {
         width: 200px;
     }
 }
-@media screen and (max-width: 412px) and (max-height: 412px) {
+
+@media screen and (max-width: 412px) and (orientation: landscape) {
     .button {
         width: 25px;
+        padding: 10px 10px;
+        font-size: 12px;
     }
+
     .display {
+        width: 200px;
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+
+    #igual {
         width: 200px;
     }
 }
-@media screen and (max-width: 915px) and (max-height: 915px) {
+
+@media screen and (max-width: 915px) and (orientation: landscape) {
     .button {
         width: 25px;
+        padding: 10px 10px;
+        font-size: 12px;
     }
+
     .display {
+        width: 200px;
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+
+    #igual {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 412px) and (orientation: portrait) {
+    .button {
+        width: 25px;
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+
+    .display {
+        width: 200px;
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+
+    #igual {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 915px) and (orientation: portrait) {
+    .button {
+        width: 25px;
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+
+    .display {
+        width: 200px;
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+
+    #igual {
         width: 200px;
     }
 }
 
 
-
-@media screen and (max-width: 810px) and (max-height: 1080px) {
-    .button {
-        width: 25px;
-
-        
-    }
-    .display {
-        width: 200px;
-    }
-}
-@media screen and (max-width: 1080px) and (max-height: 810px) {
-    .button {
-        width: 25px;
-    }
-    .display {
-        width: 200px;
-    }
-}
-@media screen and (max-width: 810px) and (max-height: 810px) {
-    .button {
-        width: 25px;
-    }
-    .display {
-        width: 200px;
-    }
-}
-@media screen and (max-width: 1080px) and (max-height: 1080px) {
-    .button {
-        width: 25px;
-    }
-    .display {
-        width: 200px;
-    }
-
-
-}
 
 
