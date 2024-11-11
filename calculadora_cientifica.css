@@ -1,17 +1,18 @@
 .button {
     border: none;
-    padding: 14px 14px;
-    font-size: 16px;
-    margin: 4px 2px;
-    width: 50px;
+    padding: 10px; /* Redueix padding per optimitzar espai */
+    font-size: 14px; /* Redueix mida del text per als botons */
+    margin: 2px; /* Marges petits per evitar que els botons es toquin */
+    width: 18%; /* Ajusta l'amplada dels botons */
     background-color: dimgray;
 }
 
 .display {
-    padding: 14px 14px;
+    padding: 10px;
     font-size: 16px;
-    width: 270px;
+    width: 90%; /* Fa més petit el display en mòbil horitzontal */
     text-align: right;
+    margin-bottom: 5px; /* Afegeix un marge inferior */
 }
 
 #divisio, #multiplicacio, #resta, #suma, #ac {
@@ -20,11 +21,11 @@
 
 #igual {
     background-color: forestgreen;
-    width: 300px;
+    width: 90%;
     text-align: center;
 }
 
-/* Calculadora per a ordinadors */
+/* Ajust per a ordinadors (sense canvis) */
 @media screen and (min-width: 1081px) {
     .display {
         width: 270px;
@@ -37,116 +38,86 @@
     }
 }
 
-/* Calculadora responsive per mòbils verticals */
+/* Mòbils en mode vertical */
 @media screen and (min-width: 320px) and (max-width: 412px) and (orientation: portrait) {
     .display {
-        width: 70%;
-        height: 20px;
+        width: 90%;
+        height: 30px;
         text-align: right;
     }
     body {
-        width: 100%;
-        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .button, #zero, #divisio, #multiplicacio, #resta, #suma, #igual, #del, #clear {
+    .button {
         width: 90%;
         height: 50px;
     }
 }
 
-/* Calculadora per a mòbils horitzontals (Samsung Galaxy S20 en horitzontal) */
+/* Mòbils en mode horitzontal (Samsung Galaxy S20 en landscape) */
 @media screen and (max-width: 915px) and (orientation: landscape) {
     .display {
-        width: 80%; /* Redueix l'amplada del display per adaptar-se a horitzontal */
-        font-size: 14px; /* Redueix la mida de la font per no ocupar tant espai */
-        padding: 8px 8px; /* Redueix padding del display */
+        width: 90%;
+        font-size: 14px; /* Redueix la mida del text */
+        padding: 8px;
         text-align: right;
+        margin-bottom: 5px;
     }
     .button {
-        width: 18%; /* Ajusta l'amplada dels botons perquè hi càpiguen */
-        padding: 8px; /* Redueix el padding per optimitzar espai */
-        font-size: 14px;
-        margin: 2px; /* Afegeix marges més petits */
+        width: 18%;
+        padding: 8px;
+        font-size: 12px; /* Mida de font més petita */
+        margin: 1px; /* Marges més petits */
     }
     #igual {
-        width: 80%; /* Ajusta l'amplada del botó igual */
+        width: 90%;
+        padding: 10px;
     }
     body {
-        width: 100vw; /* Usa tota l'amplada */
-        height: 100vh; /* Usa tota l'alçada */
-        overflow: hidden; /* Evita scroll no desitjat */
+        width: 100vw;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: 0;
         padding: 0;
+        overflow: hidden;
     }
 }
 
-/* Calculadora responsive per a mòbils en orientació portrait entre 413 i 915px */
+/* Mòbils en mode vertical (entre 413 i 915px) */
 @media screen and (min-width: 413px) and (max-width: 915px) and (orientation: portrait) {
-    body {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
     .display {
-        width: 70%;
-        height: 20px;
+        width: 90%;
+        height: 30px;
         text-align: right;
     }
-    .button, #zero, #divisio, #multiplicacio, #resta, #suma, #igual, #del, #clear {
+    .button {
         width: 90%;
         height: 50px;
     }
 }
 
-/* Calculadora responsive per a tablets, com l'iPad en orientació vertical */
+/* Tablets (iPad en mode vertical) */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-    body {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
     .display {
         width: 40%;
-        height: 20px;
-        text-align: right;
     }
-    .button, #zero, #divisio, #multiplicacio, #resta, #suma, #igual, #del, #clear {
+    .button {
         width: 100%;
-        height: 50px;
     }
 }
 
-/* Calculadora per a tablets en horitzontal amb amplada entre 1025 i 1080px */
+/* Tablets (entre 1025px i 1080px, orientació horitzontal) */
 @media screen and (min-width: 1025px) and (max-width: 1080px) {
-    body {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
     .display {
         width: 40%;
-        height: 20px;
-        text-align: right;
     }
-    .button, #zero, #divisio, #multiplicacio, #resta, #suma, #igual, #del, #clear {
+    .button {
         width: 100%;
-        height: 50px;
     }
 }
