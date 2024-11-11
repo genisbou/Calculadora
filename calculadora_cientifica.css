@@ -46,7 +46,7 @@
         justify-content: center;
         align-items: center;
     }
-    .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual {
+    .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual, #del, #clear {
         width: 90%;
         height: 50px;
     }
@@ -55,13 +55,23 @@
 /* Calculadora responsive per a mòbils orientacio landscape */
 @media screen and (min-width: 320px) and (max-width: 600px) {
     .display {
-        width: 90%;
+        width: 70%;
         height: 20px;
         text-align: right;
     }
-    .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual {
+    body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px; /* Añadir padding para evitar que se vea apretado */
+    }
+    .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual, #del, #clear {
         width: 90%;
-        height: 50px;
+        height: 40px; /* Reducir la altura de los botones */
+        margin-bottom: 5px; /* Añadir margen inferior para separar los botones */
     }
 }
 
@@ -80,7 +90,7 @@
         height: 20px;
         text-align: right;
     }
-    .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual {
+    .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual, #del, #clear {
         width: 100%;
         height: 50px;
     }
@@ -101,7 +111,7 @@
         height: 20px;
         text-align: right;
     }
-    .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual {
+    .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual, #del, #clear {
         width: 100%;
         height: 50px;
     }
@@ -118,12 +128,12 @@
         align-items: center;
     }
     .display {
-        width: 40%;
+        width: 215px; /* Ajustar el tamaño del display para que no sea demasiado grande */
         height: 30px;
         text-align: right;
     }
-    .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual {
-        width: 80%;
-        height: 60px;
+    .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual, #del, #clear {
+        width: 50px; /* Ajustar el tamaño de los botones para que no sean demasiado grandes */
+        height: 50px;
     }
 }
