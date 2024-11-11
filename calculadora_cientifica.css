@@ -1,4 +1,4 @@
-/* Assegura que el body estigui centrat i s'ajusti al viewport */
+/* Centrat del body per adaptar-se al viewport */
 body, html {
     display: flex;
     justify-content: center;
@@ -10,21 +10,27 @@ body, html {
     box-sizing: border-box;
 }
 
-/* Contenidor per centrar la calculadora */
+/* Contenidor de la calculadora centrat */
 .calculator-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px; /* Amplada fixa per a ordinadors */
+    width: 320px; /* Amplada fixa per a ordinadors */
     max-width: 100%;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5;
+    border-radius: 8px;
 }
 
-/* Ajustos de la pantalla */
+/* Ajustos de la pantalla de visualització */
 .display {
-    padding: 14px;
-    font-size: 16px;
-    width: 100%; /* Ocupa el 100% de l'ample disponible */
+    padding: 10px;
+    font-size: 18px;
+    width: 100%; /* Ocupa tota l'amplada disponible */
     text-align: right;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 /* Botons generals */
@@ -32,9 +38,12 @@ body, html {
     border: none;
     padding: 14px;
     font-size: 16px;
-    margin: 4px 2px;
-    width: 50px;
+    margin: 4px;
+    width: 100%; /* Els botons ocupen tota l'amplada disponible a cada cel·la */
     background-color: dimgray;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* Botons especials */
@@ -44,54 +53,62 @@ body, html {
 
 #igual {
     background-color: forestgreen;
-    width: 100%; /* Amplada completa per ajustar-se a la pantalla */
+    color: white;
+    font-weight: bold;
+    width: 100%;
     text-align: center;
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 5px;
 }
 
-/* Dispositiu mòbil - Samsung Galaxy S20 Ultra (vertical) */
+/* Dispositius mòbils - Samsung Galaxy S20 Ultra (vertical) */
 @media screen and (max-width: 412px) and (orientation: portrait) {
     .calculator-container {
-        width: 95%; /* Ajusta amplada per ocupar gairebé tota la pantalla */
+        width: 100%; /* Ocupa tota l'amplada disponible */
+        max-width: 380px;
+        padding: 10px;
+    }
+
+    .display {
+        font-size: 18px;
+        padding: 8px;
+        margin-bottom: 8px;
     }
 
     .button {
-        width: 22%; /* Ample de botó ajustat per a més espai */
+        width: 20%; /* Ajusta els botons a 20% per fila completa de cinc botons */
         padding: 12px;
         font-size: 14px;
     }
 
-    .display {
-        font-size: 16px;
-        padding: 12px;
-    }
-
     #igual {
-        width: 100%; /* Amplada completa per ajustar-se a la pantalla */
+        width: 100%; /* Ocupa tota l'amplada disponible per mantenir-se centrat */
         padding: 12px;
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
-/* Dispositiu mòbil - Samsung Galaxy S20 Ultra (horitzontal) */
+/* Dispositius mòbils - Samsung Galaxy S20 Ultra (horitzontal) */
 @media screen and (max-width: 915px) and (orientation: landscape) {
     .calculator-container {
-        width: 85%; /* Ajusta amplada per ocupar gairebé tota la pantalla en horitzontal */
+        width: 90%; /* Ajusta amplada per ocupar gairebé tota la pantalla en horitzontal */
     }
 
     .button {
-        width: 18%; /* Ample de botó ajustat per més espai */
+        width: 18%; /* Amplada de botó ajustada */
         padding: 10px;
         font-size: 14px;
     }
 
     .display {
-        font-size: 14px;
+        font-size: 16px;
         padding: 10px;
     }
 
     #igual {
-        width: 100%; /* Amplada completa per ajustar-se a la pantalla */
+        width: 100%;
         padding: 10px;
-        font-size: 14px;
+        font-size: 16px;
     }
 }
