@@ -51,35 +51,37 @@ body, html {
 /* Dispositiu mòbil - Samsung Galaxy S20 Ultra (vertical) */
 @media screen and (max-width: 412px) and (orientation: portrait) {
     .calculator-container {
-        width: 90%; /* Ajusta amplada per ocupar la major part de la pantalla */
+        width: 95%; /* Ajusta amplada per ocupar gairebé tota la pantalla */
     }
 
     .button {
-        width: 20%; /* Ajusta amplada del botó per adaptar-se a la pantalla */
-        padding: 10px;
-        font-size: 12px;
+        width: 22%; /* Ample de botó ajustat per a més espai */
+        padding: 12px;
+        font-size: 14px;
     }
 
     .display {
-        font-size: 14px;
-        padding: 10px;
+        font-size: 16px;
+        padding: 12px;
     }
 
     #igual {
-        width: 100%;
+        width: 100%; /* Amplada completa per ajustar-se a la pantalla */
+        padding: 12px;
+        font-size: 16px;
     }
 }
 
 /* Dispositiu mòbil - Samsung Galaxy S20 Ultra (horitzontal) */
 @media screen and (max-width: 915px) and (orientation: landscape) {
     .calculator-container {
-        width: 80%;
+        width: 85%; /* Ajusta amplada per ocupar gairebé tota la pantalla en horitzontal */
     }
 
     .button {
-        width: 18%;
+        width: 18%; /* Ample de botó ajustat per més espai */
         padding: 10px;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .display {
@@ -88,6 +90,8 @@ body, html {
     }
 
     #igual {
-        width: 100%;
+        width: 100%; /* Amplada completa per ajustar-se a la pantalla */
+        padding: 10px;
+        font-size: 14px;
     }
 }
