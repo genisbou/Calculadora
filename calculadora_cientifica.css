@@ -1,54 +1,17 @@
-body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-}
-
-.calculator {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 300px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Pantalla de la calculadora */
-.display {
-    padding: 8px;
-    font-size: 1.2em; /* Mida de font adaptable */
-    width: 100%; /* Amplada completa */
-    text-align: right;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-/* Botons de la calculadora */
 .button {
     border: none;
-    padding: 10px; /* lleugerament augmentat per millorar l'accessibilitat */
-    font-size: 1em;
-    margin: 5px;
-    width: 20%; /* Amplada adaptable */
+    padding: 14px 14px;
+    font-size: 16px;
+    margin: 4px 2px;
+    width: 50px;
     background-color: dimgray;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.2s;
 }
 
-.button:hover {
-    background-color: darkgray;
+.display {
+    padding: 14px 14px;
+    font-size: 16px;
+    width: 270px;
+    text-align: right;
 }
 
 #divisio, #multiplicacio, #resta, #suma, #ac {
@@ -57,53 +20,37 @@ body {
 
 #igual {
     background-color: forestgreen;
-    width: 100%;
+    width: 300px;
     text-align: center;
-    padding: 10px;
-    color: white;
 }
 
-/* Ajustos per a mòbils */
-@media screen and (max-width: 915px) {
-    .display {
-        font-size: 1em;
-        width: 100%;
-    }
-    .button {
-        font-size: 0.9em;
-        padding: 8px;
-        width: 22%; /* Amplada lleugerament augmentada per ajustar els espais */
-        margin: 2px;
-    }
-    #igual {
-        width: 100%;
-        padding: 10px;
-    }
-}
 
-/* Tablets */
-@media screen and (min-width: 916px) and (max-width: 1024px) {
-    .display {
-        width: 90%;
-    }
-    .button {
-        width: 22%;
-    }
-    #igual {
-        width: 90%;
-    }
-}
+/* calculadora responsive i es visualitzara de forma correcta en :
+ordinador,
+tablet i mòbil. */
 
-/* PC i pantalles grans */
-@media screen and (min-width: 1025px) {
-    .display {
-        width: 270px;
-    }
+/* Ipad IPadOS 14.7.1 : orientació landscape (1080x810) 
+Ipad IPadOS 14.7.1 : orientació portrait (810x1080)
+Samsung Galaxy S20 Ultra Android 11 : landscape ( 412x 915)
+
+
+Samsung Galaxy S20 Ultra Android 11 : portrait ( 412x 915) */ 
+
+ @media only screen and (max-width: 1080px) {
     .button {
-        width: 60px;
-        font-size: 1em;
+        padding: 10px 10px;
+        font-size: 12px;
+        margin: 2px 1px;
+        width: 30px;
     }
+
+    .display {
+        padding: 10px 10px;
+        font-size: 12px;
+        width: 150px;
+    }
+
     #igual {
-        width: 300px;
+        width: 150px;
     }
 }
