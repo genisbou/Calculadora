@@ -26,7 +26,31 @@
 
 
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 412px) and (max-height: 915px) {
+    .button {
+        width: 25px;
+    }
+    .display {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 915px) and (max-height: 412px) {
+    .button {
+        width: 25px;
+    }
+    .display {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 412px) and (max-height: 412px) {
+    .button {
+        width: 25px;
+    }
+    .display {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 915px) and (max-height: 915px) {
     .button {
         width: 25px;
     }
@@ -35,7 +59,35 @@
     }
 }
 
-@media screen and (max-width: 810px) {
+
+
+@media screen and (max-width: 810px) and (max-height: 1080px) {
+    .button {
+        width: 25px;
+
+        
+    }
+    .display {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 1080px) and (max-height: 810px) {
+    .button {
+        width: 25px;
+    }
+    .display {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 810px) and (max-height: 810px) {
+    .button {
+        width: 25px;
+    }
+    .display {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 1080px) and (max-height: 1080px) {
     .button {
         width: 25px;
     }
@@ -43,7 +95,7 @@
         width: 200px;
     }
 
-}
 
+}
 
 
