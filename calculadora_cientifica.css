@@ -52,26 +52,24 @@
     }
 }
 
-/* Calculadora responsive per a mòbils orientacio portrait */
-@media screen and (min-width: 413px) and (max-width: 915px) and (orientation: portrait) {
-    body {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+/* Fer la calculadora responsive per mòbils orientació horitzontal */
+@media screen and (max-width: 915px) and (orientation: landscape) {
     .display {
-        width: 70%;
-        height: 20px;
+        width: 90%; /* Redueix l'amplada del display en horitzontal */
+        font-size: 14px; /* Redueix la mida de la font */
+        padding: 10px 10px;
         text-align: right;
     }
-    .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual, #del, #clear {
-        width: 90%;
-        height: 50px;
+    .button {
+        width: 20%; /* Ajusta l'amplada dels botons perquè hi càpiguen */
+        padding: 10px; /* Redueix el padding dels botons */
+        font-size: 14px; /* Redueix la mida de la font */
+    }
+    #igual {
+        width: 90%; /* Ajustem també el botó igual */
     }
 }
+
 
 /* Fer la calculadora responsive per a tablets. Ipad */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
