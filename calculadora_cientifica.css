@@ -4,35 +4,41 @@
     font-size: 16px;
     margin: 4px 2px;
     width: 50px;
-    background-color:dimgray;
-
-  }
-
-
+    background-color: dimgray;
+}
 
 .display {
-    padding: 14px  14px;
+    padding: 14px 14px;
     font-size: 16px;
-    width: 270px ;
+    width: 270px;
     text-align: right;
-
 }
 
 #divisio, #multiplicacio, #resta, #suma, #ac {
-
-	background-color: orange;
-
+    background-color: orange;
 }
-#igual {
 
-	background-color: forestgreen;
+#igual {
+    background-color: forestgreen;
     width: 300px;
     text-align: center;
-
 }
 
-/* Fer la calculadora responsive per mòbils vertical. 412 * 915 */
-@media screen and (min-width: 320px) and (max-width: 412px) {
+/* Calculadora per a ordinadors */
+@media screen and (min-width: 1081px) {
+    .display {
+        width: 270px;
+    }
+    .button {
+        width: 50px;
+    }
+    #igual {
+        width: 300px;
+    }
+}
+
+/* Calculadora responsive per mòbils verticals */
+@media screen and (min-width: 320px) and (max-width: 412px) and (orientation: portrait) {
     .display {
         width: 70%;
         height: 20px;
@@ -46,32 +52,63 @@
         justify-content: center;
         align-items: center;
     }
-    .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual, #del, #clear {
+    .button, #zero, #divisio, #multiplicacio, #resta, #suma, #igual, #del, #clear {
         width: 90%;
         height: 50px;
     }
 }
 
-/* Fer la calculadora responsive per mòbils orientació horitzontal */
+/* Calculadora per a mòbils horitzontals (Samsung Galaxy S20 en horitzontal) */
 @media screen and (max-width: 915px) and (orientation: landscape) {
     .display {
-        width: 90%; /* Redueix l'amplada del display en horitzontal */
-        font-size: 14px; /* Redueix la mida de la font */
+        width: 90%; /* Redueix l'amplada del display per adaptar-se a horitzontal */
+        font-size: 14px; /* Redueix la mida de la font per no ocupar tant espai */
         padding: 10px 10px;
         text-align: right;
     }
     .button {
         width: 20%; /* Ajusta l'amplada dels botons perquè hi càpiguen */
-        padding: 10px; /* Redueix el padding dels botons */
-        font-size: 14px; /* Redueix la mida de la font */
+        padding: 10px; /* Redueix el padding per optimitzar espai */
+        font-size: 14px;
     }
     #igual {
-        width: 90%; /* Ajustem també el botó igual */
+        width: 90%; /* Ajusta l'amplada del botó igual */
+    }
+    body {
+        width: 100vw; /* Usa tota l'amplada */
+        height: 100vh; /* Usa tota l'alçada */
+        overflow: hidden; /* Evita scroll no desitjat */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
     }
 }
 
+/* Calculadora responsive per a mòbils en orientació portrait entre 413 i 915px */
+@media screen and (min-width: 413px) and (max-width: 915px) and (orientation: portrait) {
+    body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .display {
+        width: 70%;
+        height: 20px;
+        text-align: right;
+    }
+    .button, #zero, #divisio, #multiplicacio, #resta, #suma, #igual, #del, #clear {
+        width: 90%;
+        height: 50px;
+    }
+}
 
-/* Fer la calculadora responsive per a tablets. Ipad */
+/* Calculadora responsive per a tablets, com l'iPad en orientació vertical */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
     body {
         width: 100%;
@@ -86,13 +123,13 @@
         height: 20px;
         text-align: right;
     }
-    .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual, #del, #clear {
+    .button, #zero, #divisio, #multiplicacio, #resta, #suma, #igual, #del, #clear {
         width: 100%;
         height: 50px;
     }
 }
 
-/* Fer la calculadora responsive per a tauletes en orientacio horitzontal de 1080 */
+/* Calculadora per a tablets en horitzontal amb amplada entre 1025 i 1080px */
 @media screen and (min-width: 1025px) and (max-width: 1080px) {
     body {
         width: 100%;
@@ -107,9 +144,8 @@
         height: 20px;
         text-align: right;
     }
-    .button, #zero, #divisio, #multiplicacio, #restar, #sumar, #igual, #del, #clear {
+    .button, #zero, #divisio, #multiplicacio, #resta, #suma, #igual, #del, #clear {
         width: 100%;
         height: 50px;
     }
 }
-
