@@ -1,18 +1,54 @@
-.button {
-    border: none;
-    padding: 8px; /* Reduït per estalviar espai */
-    font-size: 12px; /* Mida més petita per als botons */
-    margin: 1px; /* Marges mínims per evitar que es toquin */
-    width: 20%; /* Ajusta l'amplada */
-    background-color: dimgray;
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
 }
 
+.calculator {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Pantalla de la calculadora */
 .display {
     padding: 8px;
-    font-size: 14px;
-    width: 90%;
+    font-size: 1.2em; /* Mida de font adaptable */
+    width: 100%; /* Amplada completa */
     text-align: right;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botons de la calculadora */
+.button {
+    border: none;
+    padding: 10px; /* lleugerament augmentat per millorar l'accessibilitat */
+    font-size: 1em;
+    margin: 5px;
+    width: 20%; /* Amplada adaptable */
+    background-color: dimgray;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: darkgray;
 }
 
 #divisio, #multiplicacio, #resta, #suma, #ac {
@@ -21,49 +57,40 @@
 
 #igual {
     background-color: forestgreen;
-    width: 90%;
+    width: 100%;
     text-align: center;
-    padding: 8px;
+    padding: 10px;
+    color: white;
 }
 
-/* General adjustments for mobile */
+/* Ajustos per a mòbils */
 @media screen and (max-width: 915px) {
     .display {
-        font-size: 14px; /* Mida de font més petita per a mòbils */
-        width: 95%;
+        font-size: 1em;
+        width: 100%;
     }
     .button {
-        font-size: 10px; /* Text més petit */
-        padding: 5px; /* Padding reduït */
-        width: 18%; /* Ajusta amplada per a espais estrets */
-        margin: 1px;
+        font-size: 0.9em;
+        padding: 8px;
+        width: 22%; /* Amplada lleugerament augmentada per ajustar els espais */
+        margin: 2px;
     }
     #igual {
-        width: 95%;
-        padding: 8px;
-    }
-    body {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        padding: 0;
+        width: 100%;
+        padding: 10px;
     }
 }
 
 /* Tablets */
 @media screen and (min-width: 916px) and (max-width: 1024px) {
     .display {
-        width: 80%;
+        width: 90%;
     }
     .button {
-        width: 20%;
+        width: 22%;
     }
     #igual {
-        width: 80%;
+        width: 90%;
     }
 }
 
@@ -73,7 +100,8 @@
         width: 270px;
     }
     .button {
-        width: 50px;
+        width: 60px;
+        font-size: 1em;
     }
     #igual {
         width: 300px;
